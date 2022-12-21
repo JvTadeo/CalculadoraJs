@@ -7,6 +7,7 @@ class calController
         this._operation = [];
 
         this._output = document.querySelector(".output")
+        this._darkMode = document.querySelector("#switch");
 
         this.initialize();
         this.initiButtonEvents();
@@ -15,6 +16,7 @@ class calController
     initialize()
     {
         this.setLastNumberToOutput();
+        this.darkMode();
     }
 
     addEventListenerAll(element, events, fn)
@@ -227,6 +229,13 @@ class calController
             this.addEventListenerAll(btn, "mouseover mouseup mousedown", e => {
                 btn.style.cursor = "pointer";
             })
+        })
+    }
+
+    darkMode()
+    {
+        _darkToggle.addEventListener('change', ()=>{
+            document.body.classList.toggle('dark');
         })
     }
 
