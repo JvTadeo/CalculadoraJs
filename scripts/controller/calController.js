@@ -7,7 +7,7 @@ class calController
         this._operation = [];
 
         this._output = document.querySelector(".output")
-        this._darkMode = document.querySelector("#switch");
+        this._darkMode = document.querySelector("#change-theme");
 
         this.initialize();
         this.initiButtonEvents();
@@ -234,8 +234,9 @@ class calController
 
     darkMode()
     {
-        _darkToggle.addEventListener('change', ()=>{
-            document.body.classList.toggle('dark');
+        this._darkMode.addEventListener("change", function()
+        {
+            document.body.classList.toggle("dark");
         })
     }
 
