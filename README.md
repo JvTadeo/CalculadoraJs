@@ -1,5 +1,7 @@
 ## CALCULADORA
 
+![Calculator](img/calculator_overView.png)
+
 > Olá, estou desenvolvendo esse projeto para me ajudar a entender como
 > funciona o JavaScript junto com o HTML e CSS.
 > Um projeto bem simpels de uma calculadora.
